@@ -21,13 +21,30 @@ This is my [TensorFlow](https://www.tensorflow.org/) implementations of U-net as
 
 <img src="https://i.imgur.com/puAtRH7.png">
 
+### Loss Plot
+
+![image](https://user-images.githubusercontent.com/56030842/124399003-635ddb80-dd36-11eb-9fb9-b704b9f06558.png)
+
+
 ## Prerequisites
 
 - Python 3.7
-- [Tensorflow 2.4.x](https://github.com/tensorflow/tensorflow/)
+- [Tensorflow 2.5.x](https://github.com/tensorflow/tensorflow/)
 - [NumPy](http://www.numpy.org/)
 - [PIL](https://pillow.readthedocs.io/en/stable/)
 - [Matplotlib](https://matplotlib.org/)
+<br>
+Clone this repo.
+ 
+```bash
+   git clone https://github.com/Cynamide/Image-Segmentation.git
+``` 
+
+Python in your machine should be 3.7.x.<br>
+Install Jupyter Notebook.<br>
+```bash
+   pip install jupyter-notebook
+``` 
 
 # Running the Notebook
 
@@ -56,12 +73,11 @@ Now make a new Folder named as "COCOdataset2017" with the file structure matchin
       ├──train_img(empty directory)
 ```
 ## Trianing
-
 After creating the file structure as above, simply run the make_dataset.ipynb notebook to:
 - filter images of required annotations
 - generate masks
 - resize masks and images  
 - save the images and masks in train_img and train_mask (refer the file structure)
 
-Next the final step is to run the next notebook train.py to train the model and look at the predictions it has made. You can also create your own masked video by runnig the code cell at the end of the notebook.
+Next and the final step is to run the next notebook train.py to train the model and look at the predictions it has made. You can also create your own masked video by runnig the code cell at the end of the notebook.
 
