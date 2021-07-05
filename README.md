@@ -16,7 +16,7 @@ This is my [TensorFlow](https://www.tensorflow.org/) implementations of U-net as
 ## Training
 
 - The model is trained for 10 epochs.
-- After 10 epochs, calculated accuracy is approximately about 92%.
+- After 10 epochs, calculated validation loss is approximately about 0.2.
 - Loss function for the training is a binary crossentropy.
 
 <img src="https://i.imgur.com/puAtRH7.png">
